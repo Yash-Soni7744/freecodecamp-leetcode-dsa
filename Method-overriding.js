@@ -25,4 +25,4 @@ e.requestLeaves(3)
 //Here, console.log is Employee has requested 4 leaves \n One extra is granted
 //It overrides the Employee class Method of requestLeaves()
 
-//and, super is used to use all the Employee's
+//and, super is used to use all the Employee's class information.
