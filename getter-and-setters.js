@@ -18,3 +18,5 @@ a.fly()
 console.log(a.name)
 a.name = 'Jack'
 console.log(a.name)
+
+//Here keep in ming that get and set method while setting the parameter using this than an underscore(_) should be used after "this. "
