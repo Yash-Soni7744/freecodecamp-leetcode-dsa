@@ -4,8 +4,9 @@
  * @return {boolean}
  */
 var isAnagram = function(s, t) {
+    if(t.length != s.length) return false
+    s=s.split("")
     t = t.split("")
-    console.log(t)
     for(let i=0; i<t.length; i++){
         let a = t.slice()
         let b = a.splice(i,1)
@@ -15,10 +16,9 @@ var isAnagram = function(s, t) {
         }
         if(s.includes(...b)){
             let index = s.indexOf(...b)
-            s.split('').splice(index,1)
+            s.splice(index,1)
         }
     }
     return true
 };
 
-isAnagram("anagram","nagaram")
